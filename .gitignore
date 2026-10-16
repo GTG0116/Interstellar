@@ -9,4 +9,5 @@ test/
 .DS_Store
 .hintrc
 .gitpod.yml 
-.env.wrangler
+.env
+.wrangler
