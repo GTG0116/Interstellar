@@ -1,0 +1,13 @@
+{
+  // Without this file Cloudflare guesses the framework from app.json, decides this is an Expo app,
+  // and runs `expo export`, which fails. This deploys the built dist/ as static assets instead.
+  "name": "interstellar",
+  "compatibility_date": "2026-10-01",
+  "build": {
+    "command": "pnpm build:cloudflare"
+  },
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "404-page"
+  }
+}
